@@ -1,0 +1,109 @@
+.header {
+    background-color: rgb(154, 9, 9);
+    text-align: center;
+    color: white;
+}
+
+.hr1 {
+    width: 420px;
+}
+
+body {
+    background-color: rgb(153, 9, 9);
+}
+
+.cat-background {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.size {
+    font-size: 18px;
+    color: white;
+}
+
+.table1 {
+    width: 100%;
+    border-spacing: 0px;
+}
+    
+.tr1 {
+    margin-top: auto;
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.tr2 {
+    width: 100%;
+}
+
+.tr2-td1 {
+    background-color: rgb(125, 9, 9);
+    width: 25%;
+    vertical-align: 0px;
+    line-height: 350%;
+}
+
+.tr2-td2 {
+    vertical-align: 0px;
+}
+
+a {
+    color: rgb(233, 91, 14);
+}
+
+.tr2-td3 {
+    background-color: rgb(227, 221, 221);
+    color: black;
+    width: 18%;
+}
+
+
+.title {
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    font-weight: bold;
+}
+
+
+.cat {
+    margin-top: 35px; 
+    margin-right: 43px; 
+    margin-left: 43px; 
+    margin-bottom: 25px;
+    color: white;
+    background-color: black;
+   
+}
+
+small {
+    font-size: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+hr {
+    width: 120px;
+}
+
+
+footer {
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(233, 91, 17);
+    background-color: rgb(233, 91, 17);
+    margin-left: auto;
+    margin-left: auto;
+   
+}
+
+
+
+
+
