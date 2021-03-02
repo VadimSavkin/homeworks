@@ -1,0 +1,61 @@
+table {
+    width: 100%;
+}
+
+td {
+    width: 33.33%;
+}
+
+td {
+    text-align: center;
+}
+
+
+.icon {
+    width: 65px;
+    height: 65px;
+    background-color: #1275b9;
+    border: 1px solid #1275b9;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+td:hover .icon {
+    background-color: #ffffff;
+}
+
+.icon-design {
+    background-image: url(/img/Tablet.svg);
+}
+td:hover .icon-design {
+    background-image: url(/img/Tablet_active.svg);
+}
+.icon-customize {
+    background-image: url(/img/Settings.svg);
+}
+
+td:hover .icon-customize {
+    background-image: url(/img/Settings_active.svg);
+}
+.icon-fast {
+    background-image: url(/img/Dashboard.svg);
+}
+td:hover .icon-fast {
+    background-image: url(/img/Dashboard_active.svg);
+}
+
+.tr2 td {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
