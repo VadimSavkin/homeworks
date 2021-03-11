@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('fonts/Lato-Light.eot');
+	src: local('☺'), url('fonts/Lato-Light.woff') format('woff'), url('fonts/Lato-Light.ttf') format('truetype'), url('fonts/Lato-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('fonts/Lato-Bold.eot');
+	src: local('☺'), url('fonts/Lato-Bold.woff') format('woff'), url('fonts/Lato-Bold.ttf') format('truetype'), url('fonts/Lato-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+ 
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 736px;
+    width: 1600px;
+    background-color: #f6f6f6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 109px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato-Bold' sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.line {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    top: 202px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+    width: 565px;
+    color: #3c3c3c;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: 'Lato-Light' sans-serif;
+
+}
+
+.box {
+    width: 268px;
+    height: 268px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .7s ease-in-out;
+}
+
+.title {
+    position: absolute;
+    top: 289px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #282528;
+    font-weight: 700;
+    font-family: "Lato" sans-serif;
+}
+
+.footer {
+    position: absolute;
+    top: 311px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #818181;
+    font-weight: 300;
+    font-family: "Lato" sans-serif;
+    letter-spacing: 2px;
+}
+
+.lead {
+    position: absolute;
+    top: 296px;
+    left: 214px;
+    background-image: url(/hw2/TFG.png);
+}
+
+.developer{
+    position: absolute;
+    top: 296px;
+    left: 514px;
+    background-image: url(/hw2/developer.png);
+}
+
+.artist{
+    position: absolute;
+    top: 296px;
+    left: 814px;
+    background-image: url(/hw2/artist.png);
+}
+
+.designer{
+    position: absolute;
+    top: 296px;
+    left: 1114px;
+    background-image: url(/hw2/designer.png);
+}
+
+.box:hover {
+    transform: scale(1.7);
+    z-index: 1;
+}
+
+
+
