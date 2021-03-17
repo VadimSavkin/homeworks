@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formhw1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styleformhw1_1.css">
+
+</head>
+<body>
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="contact__text">
+            <span class="contact__text-span">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!
+            </span>
+        </div>
+    </div>
+    <div class="all-data">
+        <div>
+            <form action="/api/payment" method="GET" class="all-data_left-column">
+                <input type="text" required placeholder="Auskteez Tran">
+                <input type="email" required placeholder="Your email...">
+                <input type="tel" required pattern="^[0-9]{3}\s[0-9]{3}\s[0-9]{4}" maxlength="13" minlength="13" placeholder="Your phone number...">
+                <textarea placeholder="Your message..." cols="30" rows="10"></textarea>
+                <button type="submit" class="button"></button>
+            </form>
+        </div>
+       
+        <div class="all-data_right-column">
+            <div>
+                <p class="right-column_title">ADDRESS</p>
+                <p class="subtitle">123 City name, Street, City, Country</p>
+            </div>
+            <div>
+                <p class="right-column_title">EMAIL</p>
+                <p class="subtitle">cahee@domain.com</p>
+            </div>
+            <div>
+                <p class="right-column_title">PHONE</p>
+                <p class="subtitle">+012 345 6789</p>
+            </div>
+        </div>
+        <!-- <button class="submint" type="submit">GO</button> -->
+    </div>
+    <footer>
+        <div class="long">
+            <div>
+                <p  class="company">© 2015 Company. All right reserved.</p>
+            </div>
+            <div>
+                <p class="cahee">Cahee</p>
+            </div>
+            <div>
+                <p class="made">Made with <span>love</span> by Auskteez</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
