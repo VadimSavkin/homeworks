@@ -75,6 +75,7 @@ h1 {
     height: 268px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
     transition: all .7s ease-in-out;
 }
 
@@ -103,7 +104,7 @@ h1 {
     position: absolute;
     top: 296px;
     left: 214px;
-    background-image: url(/hw2/TFG.png);
+    background-image: url('/hw2/timlid.png');
 }
 
 .developer{
@@ -127,10 +128,15 @@ h1 {
     background-image: url(/hw2/designer.png);
 }
 
+
+
 .box:hover {
-    transform: scale(1.7);
+    width: 268px;
+    height: 268px;
+    background-color: #18b5dc;
+    transform: scale(1.5);
     z-index: 1;
-}
+} 
 
 
 
