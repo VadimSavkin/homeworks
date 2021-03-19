@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formhw2</title>
+    <link rel="stylesheet" href="/styleformhw2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="card">
+            <header>
+                <div class="card-header">
+                    <div class="card-header__first-element"><a href="#">Sign in</a></div>
+                    <div class="card-header__second-element"><a href="#">Join us</a></div>
+                </div>
+
+            </header>
+            <!-- INPUT BLOCK -->
+            <form action="/api/payment/" method="POST">
+                <div class="container">
+
+                    <label for="username" class="form_input-label">
+                        <span class="d-block mb-11">Username</span>
+                    </label>
+                    <input class="form_input-element" type="text" name="username" required>
+
+                    <label for="password" class="form_input-label">
+                        <span class="d-block mb-11">Password</span>
+                    </label>
+                    <input class="form_input-element" type="password" name="password" required>
+
+                    <input type="checkbox" class="check" name="checkbox" id="check-id">
+                    <label for="check-id"><span class="checkbox-label">Keep me signed in</span></label>
+
+                    <footer>
+
+                        <div class="registerdbtn">
+                            <input type="submit" class="registerdbtn-element" value="Sign in">
+                        </div>
+
+                        <div class="mt-30 flex finished_link">
+                            <span><a class="finished_link-element" href="#">Forgot password</a></span>
+                            <span><a class="finished_link-element" href="#">Create an account</a></span>
+                        </div>
+
+                    </footer>
+
+
+                    <!-- INPUT BLOCK -->
+
+                </div>
+            </form>
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
+
+
