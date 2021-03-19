@@ -1,0 +1,160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 100px;
+}
+
+a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.mb-11 {
+    margin-bottom: 11px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.d-block {
+    display: block;
+}
+
+.card {
+    width: 400px;
+    height: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/bridge2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 22px 14px 2px rgba(0,0,0,0.23);
+}
+
+.card-header {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+    box-sizing: content-box;
+}
+
+.card-header__first-element {
+    margin-top: 50px;
+    margin-right: 26px;
+    opacity: 0.5;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card-header__second-element {
+    transition: 0.3s;
+    opacity: 0.5;
+
+}
+
+.card-header__first-element:hover,
+.card-header__second-element:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e66a64;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+}
+
+.form_input-label {
+    font-size: 16px;
+    color: #fbf6e4;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.form_input-element {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 19px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #a88bca;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.checkbox-label {
+    font-size: 13px;
+    color: #fbf6e4;
+    font-weight: 700;
+
+}
+
+.check {
+    transform: scale(1.3);
+    margin: 0 5px 0 0;
+}
+
+.registerdbtn {
+    margin-top: 41px;
+}
+
+.registerdbtn-element {
+    height: 42px;
+    width: 100%;
+    background-color: #23ae92;
+    font-size: 18px;
+    color: #fbf6e4;
+    font-weight: 700;
+    border-color: transparent;
+    transition: 0.5s;
+}
+
+.registerdbtn-element:hover {
+    background-color: #e66a64;
+    border-color: #23ae92;
+}
+
+.flex {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+footer,
+.finished_link {
+    width: 100%;
+}
+
+.finished_link-element {
+    font-size: 13px;
+    color: #b9b9cc;
+    font-weight: 400;
+    font-family: "Quicksand";
+    width: 100%;
+    transition: 0.5s;
+    
+}
+
+.finished_link-element:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #433bb2;
+}
+
