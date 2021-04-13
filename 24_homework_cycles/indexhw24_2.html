@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // #2 Запросить 2 числа и найти только наибольший общий делитель. 
+        let numb1 = +prompt("Введіть перше ціле число");
+        let numb2 = +prompt("Введіть друге ціле число");
+        let divider;
+
+        if (numb1 > numb2) {
+            divider = numb2;
+        } else {
+            divider = numb1
+        };
+
+        while (divider >= 1) {
+            if (numb1 % divider === 0 && numb2 % divider === 0) {
+                console.log(divider);
+                // window.alert(divider);
+                break; // by O. Nichiporuck
+            }
+            divider--;
+        }
+    </script>
+</body>
+
+</html>

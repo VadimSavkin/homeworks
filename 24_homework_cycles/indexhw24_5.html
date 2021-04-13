@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // #5 Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей.
+        // При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран.
+
+        // by Nazar
+        let positive = 0;
+        let negative = 0;
+        let zero = 0;
+
+        let even = 0;
+        let odd = 0;
+
+        for (let i = 0; i < 10; i++) {
+            let num = +prompt("Введіть, будь ласка, число");
+            if (num === 0) {
+                zero++;
+            } else if (num > 0) {
+                positive++;
+            } else if (num < 0) {
+                negative++;
+            }
+
+            if (num % 2 === 0) {
+                even++;
+            } else if (num % 2 !== 0) {
+                odd++;
+            }
+        }
+        console.log(`Парних чисел ${even}`);
+        console.log(`Непарних чисел ${odd}`);
+        console.log(`Додатніх чисел ${positive}`);
+        console.log(`Від'ємних чисел ${negative}`);
+        console.log(`Рівних нулю чисел ${zero}`);
+    </script>
+</body>
+
+</html>
