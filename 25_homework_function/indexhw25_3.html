@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // #3 Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. 
+        // Например: цифры 1, 4, 9 превратятся в число 149.
+        function threeNum() {
+            let a = +window.prompt("Введіть перше невід'ємне число");
+            let b = +window.prompt("Введіть друге невід'ємне число");
+            let c = +window.prompt("Введіть третє невід'ємне число");
+            if (a < 0 || b < 0 || c < 0) {
+                window.alert("Введіть коректний набір символів") // не прцює з 0-(м
+            } else {
+                a = String(a);
+                b = String(b);
+                c = String(c);
+                window.alert(a + b + c);
+            }
+        }
+        threeNum();
+    </script>
+</body>
+
+</html>
