@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework24</title>
+</head>
+
+<body>
+    <script>
+        // #1 Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+        // let start = +prompt("Введіть ціле число початку діапазону");
+        // let end = +prompt("Введіть ціле число кінця діапазону");
+        // let summ = 0
+        // if (start === end) {
+        //     console.log("Введіть, бляха, нормальний діапазон!");
+        // }
+        // for (; start <= end; start++) {
+        //     summ = summ + start;
+        // }
+        // window.alert(`Сума чисел у заданому діапазоні дорівнює ${summ}`);
+
+        // або
+
+        let start = +prompt("Введіть ціле число початку діапазону");
+        let end = +prompt("Введіть ціле число кінця діапазону");
+        let summ = 0;
+        while (start <= end) {
+            summ += start;
+            start++;
+        }
+        window.alert(`Сума чисел у заданому діапазоні дорівнює ${summ}`);
+    </script>
+</body>
+
+</html>
