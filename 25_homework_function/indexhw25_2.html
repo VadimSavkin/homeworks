@@ -11,8 +11,12 @@
 <body>
     <script>
         // #2 Написать функцию, которая вычисляет факториал переданного ей числа.
-        function fact() {
-            let num = +window.prompt("Задайте число");
+        // let num = +window.prompt("Задайте число");
+        function fact(num) {
+            if (!num) {
+                window.alert("Введіть коректне число");
+                return;
+            };
             let result = 1;
             while (num > 1) {
                 result *= num
@@ -20,7 +24,7 @@
             };
             window.alert(result);
         };
-        fact();
+        fact(8);
     </script>
 </body>
 
