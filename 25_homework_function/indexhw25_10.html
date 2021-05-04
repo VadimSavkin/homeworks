@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW25_10</title>
+</head>
+
+<body>
+    <script>
+        // #10 Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров,
+        // которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс».
+        // При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды,
+        // узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс»
+
+        function diff(h1 = 0, m1 = 0, s1 = 0, h2 = 0, m2 = 0, s2 = 0) {
+            if (h1 < 0 || m1 < 0 || s1 < 0 || h2 < 0 || m2 < 0 || s2 < 0) {
+                return console.log("Введено некоректні дані")
+            } else if (!h1 || !m1 || !s1 || !h2 || !m2 || !s2) {
+                return console.log("Введено некоректні дані")
+            };
+            let timeInSecond1 = (h1 * 3600 + m1 * 60 + s1);
+            let timeInSecond2 = (h2 * 3600 + m2 * 60 + s2);
+            let result;
+            if (timeInSecond1 > timeInSecond2) {
+                result = timeInSecond1 - timeInSecond2;
+            } else {
+                result = timeInSecond2 - timeInSecond1;
+            };
+            let h = Math.floor(result / 3600);
+            let m = Math.floor((result % 3600) / 60);
+            let s = result % 60;
+            h = `${h}`.padStart(2, "0");
+            m = `${m}`.padStart(2, "0");
+            s = `${s}`.padStart(2, "0");
+            return `Різниця у часі становить (гг:хв:сс): ${h}:${m}:${s}`;
+        };
+        console.log(diff(2, 2, 2, 1, 1, 1));
+// console.log(diff(2, 2, "qwerty", 1, , 1)); // не працює у випадку введення типу даних "рядок" або у разі відсутності параметра. чому?
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW25_9</title>
+</head>
+
+<body>
+    <script>
+        // #9 Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает
+        // в виде строки «чч:мм:сс».
+
+        // by Nazar
+
+        function getTime(s) {
+            let resultHours = Math.floor(s / 3600);
+            let resultMinutes = Math.floor((s % 3600) / 60);
+            let resultSeconds = s % 60;
+
+            let seconds = `${resultSeconds}`.padStart(2, "0");
+            let minutes = `${resultMinutes}`.padStart(2, "0");
+            let hours = `${resultHours}`.padStart(2, "0");
+
+            return `${hours}:${minutes}:${seconds}`;
+        };
+        console.log(getTime(3661));
+    </script>
+</body>
+
+</html>
