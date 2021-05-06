@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw26_1-1</title>
+</head>
+
+<body>
+    <script>
+        //    1) Функция для вывода на экран 
+        // информации об автомобиле;
+        let car = {
+            producer: "AvtoZAZ",
+            model: "Tavria NOVA 110207",
+            year: 2005,
+            avgSpeed: "75 km/h",
+        };
+        function showInfo() {
+            for (let key in car) {
+                console.log(`${key}: ${car[key]}`);
+            }
+        }
+// showInfo();
+
+// або
+function Car(producer, model, year, avgSpeed) {
+  this.producer = producer;
+  this.model = model;
+  this.year = year;
+  this.avgSpeed = avgSpeed;
+  this.showInfo = function () {
+    for (let key in this) {
+      if (["string", "number"].includes(typeof this[key])) {
+        console.log(`${key}: ${this[key]}`);
+      }
+    }
+  };
+
+};
+let perfectCar = new Car("AvtoZAZ", "Tavria NOVA 110207", "2005", "80 km/h");
+perfectCar.showInfo();
+    </script>
+</body>
+
+</html>

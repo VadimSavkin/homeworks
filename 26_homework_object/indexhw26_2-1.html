@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw26_2-1</title>
+</head>
+
+<body>
+    <script>
+        //#2-1 Функция !додавання! 2-х объектов-дробей;
+        function Fraction(numerator, denominator) {
+            this.numerator = numerator;
+            this.denominator = denominator;
+        };
+
+        let drib1 = new Fraction(7, 9);
+        let drib2 = new Fraction(5, 6);
+
+        function add(obj1, obj2) {
+            let addDrib = new Fraction();
+            if (obj1.denominator === obj2.denominator) {
+                addDrib.numerator = obj1.numerator + obj2.numerator;
+                addDrib.denominator = obj1.denominator;
+                // return addDrib; // like object
+                return `${addDrib.numerator}/${addDrib.denominator}` // or like fraction
+            } else {
+                let znam;
+                for (let i = 1; true; i++) {
+                    if (i % obj1.denominator === 0 && i % obj2.denominator === 0) {
+                        znam = i;
+                        break;
+                    };
+                };
+                obj1.numerator = obj1.numerator * (znam / obj1.denominator);
+                obj1.denominator = obj1.denominator * (znam / obj1.denominator);
+                obj2.numerator = obj2.numerator * (znam / obj2.denominator);
+                obj2.denominator = obj2.denominator * (znam / obj2.denominator);
+
+                let drib3 = new Fraction();
+                drib3.numerator = obj1.numerator + obj2.numerator;
+                drib3.denominator = znam;
+                return `${drib3.numerator}/${drib3.denominator}`; // like fraction
+                // return drib3; // like object;
+            };
+        };
+        console.log(add(drib1, drib2));
+    </script>
+</body>
+
+</html>

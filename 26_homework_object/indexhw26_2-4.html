@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw26_2-4</title>
+</head>
+
+<body>
+    <script>
+        //#2-4 Функция !ділення! 2-х объектов-дробей;
+        function Fraction(numerator, denominator) {
+            this.numerator = numerator;
+            this.denominator = denominator;
+        };
+
+        let drib1 = new Fraction(7, 8);
+        let drib2 = new Fraction(5, 6);
+        function division(obj1, obj2) {
+            let divNumerator = obj1.numerator * obj2.denominator;
+            let divDenominator = obj1.denominator * obj2.numerator;
+            if (divNumerator < divDenominator) {
+                return `${divNumerator}/${divDenominator}`;
+            } else if (divNumerator > divDenominator) {
+                let wholePart = Math.trunc(divNumerator / divDenominator);
+                divNumerator = divNumerator % divDenominator;
+                return `${wholePart} цілих і ${divNumerator}/${divDenominator}`
+            } else {
+                return `1 ціла ОДИНИЦЯ`;
+            };
+        };
+        console.log(division(drib1, drib2));
+    </script>
+</body>
+
+</html>
