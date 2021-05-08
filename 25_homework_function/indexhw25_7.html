@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW25_7</title>
+</head>
+<body>
+    <script>
+// #7 Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран
+// в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+function time(h, m, s) {
+  if (!h || h < 0) {
+    h = 0;
+  } else if (!m || m < 0) {
+    m = 0;
+  } else if (!s || s < 0) {
+    s = 0;
+  }
+  let hour = `${h}`.padStart(2, "0");
+  let minute = `${m}`.padStart(2, "0");
+  let second = `${s}`.padStart(2, "0");
+  return `${hour}:${minute}:${second}`;
+}
+console.log(time(2, 5, -4)); // як вирішити ситуацію, коли "хв" та/або "с" не передані??? не працює коректно з двома і більше від'ємними значеннями
+    </script>
+</body>
+</html>

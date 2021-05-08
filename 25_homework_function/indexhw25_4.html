@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW25_4</title>
+</head>
+
+<body>
+    <script>
+        // №4 Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь.
+        // Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
+        function area(a, b) {
+            if (a < 0 || b < 0 || a == 0 && b == 0) {
+                window.alert("Введіть коректні значення величин");
+                return;
+            }
+            if (a && b) {
+                +window.alert(`Площа прямокутника становить ${(a * b).toFixed(2)} см. кв.`);
+            } else if (a != "" && b == "") {
+                +window.alert(`Площа квадрата становить ${(a * a).toFixed(2)} см. кв.`);
+            } else if (a == "" && b != "") {
+                +window.alert(`Площа квадрата становить ${(b * b).toFixed(2)} см. кв.`);
+            };
+        }
+        area(6, 6);
+    </script>
+</body>
+
+</html>

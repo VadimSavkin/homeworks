@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // #2 Написать функцию, которая вычисляет факториал переданного ей числа.
+        // let num = +window.prompt("Задайте число");
+        function fact(num) {
+            if (!num) {
+                window.alert("Введіть коректне число");
+                return;
+            };
+            let result = 1;
+            while (num > 1) {
+                result *= num
+                num--;
+            };
+            window.alert(result);
+        };
+        fact(8);
+    </script>
+</body>
+
+</html>

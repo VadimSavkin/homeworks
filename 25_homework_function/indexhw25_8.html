@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РЦ25_8</title>
+</head>
+<body>
+    <script>
+// #8 Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+function timeInSecond(h, m, s) {
+  if (h >= 0 && m >= 0 && s >= 0) {
+    return console.log((h * 3600 + m * 60 + s));
+  } else {
+      console.log("Введіть коректне значення величин!");
+  };
+};
+timeInSecond(1, 1, 0); // питання те ж: як вирішити ситуацію, коли "хв" та/або "с" не передані???
+    </script>
+</body>
+</html>
