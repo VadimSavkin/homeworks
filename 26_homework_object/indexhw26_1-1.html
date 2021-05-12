@@ -18,12 +18,12 @@
             year: 2005,
             avgSpeed: "75 km/h",
         };
-        function showInfo() {
+        function showInfo(car) {
             for (let key in car) {
                 console.log(`${key}: ${car[key]}`);
             }
         }
-// showInfo();
+// showInfo(car);
 
 // або
 function Car(producer, model, year, avgSpeed) {
@@ -38,7 +38,6 @@ function Car(producer, model, year, avgSpeed) {
       }
     }
   };
-
 };
 let perfectCar = new Car("AvtoZAZ", "Tavria NOVA 110207", "2005", "80 km/h");
 perfectCar.showInfo();
