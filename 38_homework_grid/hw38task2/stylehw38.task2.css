@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'font215d663ec607e25b1aac95fe9b0a5e72';
+    src:    
+    url('https://nomail.com.ua/files/eot/215d663ec607e25b1aac95fe9b0a5e72.eot?#iefix') format('embedded-opentype'),
+    
+    url('https://nomail.com.ua/files/woff/215d663ec607e25b1aac95fe9b0a5e72.woff') format('woff'),
+                
+    url('https://nomail.com.ua/files/woff2/215d663ec607e25b1aac95fe9b0a5e72.woff2') format('woff2');
+    }
+    
+@font-face { font-family: 'HansKendrick-Regular';  src: local('HansKendrick-Regular'), url('https://nomail.com.ua/files/woff/215d663ec607e25b1aac95fe9b0a5e72.woff') format('woff'); }
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1600px;
+    width: 100%;
+    overflow: hidden;
+    background: #e2e7ec;
+    margin: 0 auto;
+}
+.content {
+    max-width: 1120px;
+    width: 100%;
+    margin: 90px auto 209px auto;
+}
+.content_grid {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+}
+.content_grid_item {
+     max-width: 360px;
+     width: 100%;
+     background: #fff;
+}
+.car {
+    position: relative;
+    max-width: 740px;
+    width: 100%;
+    max-height: 540px;
+    height: 100%;
+    background: url("/img/bigCar.jpg");
+    height: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.car-text-position {
+    position: absolute;
+    left: 43px;
+    bottom: 40px;
+    width: 458px;
+}
+
+.first-item {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+.item_bg {
+    width: 360px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.sharf {
+    background: url("/img/sharf.jpg");
+}
+.photo {
+    background: url("/img/photo.jpg");
+}
+.shouses {
+    background: url("/img/shouses.jpg");
+}
+.little-car {
+    background: url("/img/little-car.jpg");
+}
+
+.date-on-bug {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "HansKendrick";
+    margin-bottom: 25px;
+}
+.card-date {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #818181;
+    font-weight: 500;
+    font-family: "Hans Kendrick";
+    text-transform: uppercase;
+    margin: 20px auto 24px 27px;
+}
+.card-text_first-card {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: "Hans Kendrick";
+}
+.card-text {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #1d1d1d;
+    font-family: "Hans Kendrick";
+    text-transform: uppercase;
+    margin-left: 27px;
+    margin-bottom: 55px;
+}
+.first-card-text {
+    width: 466px;
+}
+.avatar {
+    margin-bottom: 20px;
+    margin-left: 27px;
+}
+.footer {
+    width: 100%;
+}
+.footer-block {
+    margin: 79px auto 102px auto;
+    display: grid;
+    text-align: center;
+}
+.loading-text {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #99a5b0;
+    font-family: "Hans Kendrick";
+}
+
